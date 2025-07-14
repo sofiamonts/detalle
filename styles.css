@@ -131,12 +131,15 @@ body {
 
 /* 5. SECCIONES */
 .circle-img {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  max-width: 180px;
+  height: 180px;
   object-fit: cover;
-  object-position: center;
   border-radius: 50%;
+  display: block;
+  margin: 0 auto;
 }
+
 
 
 section {
