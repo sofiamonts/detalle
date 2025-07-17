@@ -1,6 +1,6 @@
 /* 1. VARIABLES DE DISEÑO */
 :root {
-  --primary-color: #FF62BD;
+  --primary-color: #E3562B;
   --secondary-color: #000000;
   --light-color: #f8f9fa;
   --dark-color: #000000;
@@ -103,6 +103,18 @@ body {
 }
 
 /* Botones */
+
+.btn-primary {
+  background-color: #E3562B !important;
+  border-color: #E3562B !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: #E3562B !important;
+  border-color: #E3562B !important;
+}
+
 .btn {
   border-radius: 50px;
   padding: 10px 30px;
@@ -111,12 +123,12 @@ body {
 }
 
 .btn-dark {
-  background-color: var(--primary-color);
+  background-color: #CE6EC8;
   border: none;
 }
 
 .btn-dark:hover {
-  background-color: #E3562B;
+  background-color: #000000;
 }
 
 .btn-outline-dark {
@@ -161,6 +173,23 @@ section h2::after {
   margin: 20px auto 0;
 }
 
+/* experito */
+
+ .experimentos-section {
+  background-color: #4FBE60; /* Verde de fondo */
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #000;
+}
+
+.icon-img {
+  width: 120px;
+  height: auto;
+}
+
+
+
+
+
 /* 6. CARDS */
 .card {
   border: none;
@@ -195,6 +224,198 @@ section h2::after {
 .card-text {
   color: #6c757d;
 }
+
+
+/* pasos */
+.bg-naranja {
+  background-color: #E64A19; /* naranja fuerte */
+}
+
+.icono {
+  width: 80px;
+  height: auto;
+}
+
+.seccion-pasos .col-md-3 {
+  max-width: 340px;
+  margin: 0 auto; /* Centra cada bloque */
+  padding: 1rem;   /* Espacio interno */
+} 
+
+.semi-bold-italic {
+  font-style: italic;
+  font-weight: 600;
+}
+.seccion-pasos h5 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.seccion-pasos p {
+  font-size: 0.95rem;
+}
+/* 4 benef */
+.benefits-kidkits {
+  background-color;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.kidkit-card {
+  background-color: #E64A24; /* rojo tipo "terracota" */
+  color: white;
+  border-radius: 30px;
+  padding: 40px 20px;
+  position: relative;
+  text-align: center;
+  max-width: 250px;
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.corner-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  transform: translate(30%, -30%);
+}
+
+@media (max-width: 768px) {
+  .kidkit-card {
+    font-size: 16px;
+    padding: 30px 15px;
+  }
+
+  .corner-icon {
+    width: 45px;
+    transform: translate(25%, -25%);
+  }
+}
+
+
+/* precio */
+.seccion-precio {
+  background-color: 
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.caja-precio {
+  background-color:  #62D56E;
+  max-width: 700px; /* Podés agrandar más si querés */
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+
+.precio .monto {
+  font-size: 40px;
+}
+
+.precio .unidad {
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.subtexto-precio {
+  font-size: 14px;
+  color: #333;
+}
+
+.envios {
+  font-size: 12px;
+  color: #333;
+}
+
+/* otras opciones */
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: #fde6a6;
+  color: #1e1e1e;
+}
+
+
+
+.kits-section h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.kits-section .sub {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.kit-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.kit-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 1rem 0;
+}
+
+.kit-card li::before {
+  content: '';
+}
+
+
+
+
+.kit-img-inside {
+  width: 130px;
+  height: auto;
+}
+
+.bg-explorer {
+  background-color: #8896e3;
+}
+
+.bg-artist {
+  background-color: #bc75b6;
+}
+
+.btn-pink {
+  background-color: #CE6EC8;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 25px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.btn-pink:hover {
+  background-color: #ff4ab7;
+  color: white;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .kit-card {
+    padding-top: 120px;
+    min-height: auto;
+  }
+
+  .kit-img {
+    top: -60px;
+    width: 80px;
+  }
+}
+
 
 /* 7. TESTIMONIOS */
 .blockquote {
@@ -239,6 +460,45 @@ img.rounded-circle {
   transform: scale(1.05);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
 }
+
+
+
+  .marcas {
+    padding: 40px 0;
+  }
+
+  .contenedor-marcas {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+  }
+
+  .contenedor-marcas img {
+    height: 60px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+
+  .contenedor-marcas img:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    .contenedor-marcas {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .contenedor-marcas img {
+      height: 50px;
+    }
+  }
 
 /* ============================== */
 /* CUSTOM HELPER CLASSES */
@@ -300,14 +560,14 @@ img.rounded-circle {
 }
 
 .btn-primary {
-  background-color: #FF62BD !important;
-  border-color: #FF62BD !important;
+  background-color: #E3562B !important;
+  border-color: #E3562B !important;
   color: white !important;
 }
 
 .btn-primary:hover {
-  background-color: #E3562B !important;
-  border-color: #E3562B !important;
+  background-color: #000000 !important;
+  border-color: #000000 !important;
 }
 
 .bg-cover {
@@ -357,6 +617,23 @@ img.rounded-circle {
   padding-bottom: 50px;
 }
 
+/* Color por defecto cuando NO está seleccionada la pregunta */
+.accordion-button.collapsed {
+  background-color: #BBDCD7;
+  color: #000;
+}
+
+/* Color cuando está seleccionada la pregunta */
+.accordion-button:not(.collapsed) {
+  background-color: #76AEA6;
+  color: #000;
+}
+
+/* Opcional: eliminar el borde del botón si no lo querés */
+.accordion-button {
+  border: none;
+  box-shadow: none;
+}
 
 /* ============================== */
 /* MEDIA QUERIES */
